@@ -1,4 +1,4 @@
-FROM microsoft/dotnet:2.0.7-sdk-2.1.200-jessie
+FROM microsoft/dotnet:2.1.300-sdk-stretch
 
 ENV SONAR_SCANNER_MSBUILD_VERSION 4.2.0.1214
 ENV DOCKER_VERSION 17.06.2
