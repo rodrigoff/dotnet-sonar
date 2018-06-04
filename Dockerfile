@@ -4,9 +4,8 @@ ENV SONAR_SCANNER_MSBUILD_VERSION 4.2.0.1214
 ENV DOCKER_VERSION 17.06.2
 
 # Install Java 8
-RUN echo deb http://http.debian.net/debian jessie-backports main > /etc/apt/sources.list.d/jessie-backports.list \
-    && apt update \
-    && apt install -y -t jessie-backports openjdk-8-jre
+RUN apt update \
+    && apt install -y openjdk-8-jre
 
 # Install docker binaries
 RUN apt-get update \
